@@ -13,6 +13,7 @@ namespace BookRight.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Booking> builder)
         {
+            // mappe entiten til tabelen booking i db
             builder.ToTable("Bookings");
 
             builder.HasKey(b => b.BookingId);
