@@ -12,7 +12,7 @@ namespace BookRight.Infrastructure.Persistence.Configurations
     public class BookingConfiguration : IEntityTypeConfiguration<Booking>
     {
         public void Configure(EntityTypeBuilder<Booking> builder)
-        {
+        { // gemmes identity i database
             builder.ToTable("Bookings");
 
             builder.HasKey(b => b.BookingId);
