@@ -15,6 +15,7 @@ namespace BookRight.Infrastructure.Persistence.Configurations
         { // gemmes identity i database
             builder.ToTable("Bookings");
 
+            // angiver bookingId som primærnøgle
             builder.HasKey(b => b.BookingId);
 
             builder.Property(b => b.Date)
